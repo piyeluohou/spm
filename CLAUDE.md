@@ -4,10 +4,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-- `npm run dev` — start the dev server (http://localhost:3000). Uses Turbopack.
-- `npm run build` — production build. Note: **build does not run linting** (Next 16 removed `next lint`).
-- `npm run lint` — run ESLint (flat config in `eslint.config.mjs`). Run this separately from `build`.
-- `npm start` — serve the production build.
+Package manager: **pnpm** (project uses `pnpm-lock.yaml`; don't use npm/yarn).
+
+- `pnpm dev` — start the dev server (http://localhost:3000). Uses Turbopack.
+- `pnpm build` — production build. Note: **build does not run linting** (Next 16 removed `next lint`).
+- `pnpm lint` — run ESLint (flat config in `eslint.config.mjs`). Run this separately from `build`.
+- `pnpm start` — serve the production build.
 - No test runner is configured; there are no tests in the repo.
 
 ## Critical: this is Next.js 16, not the version you know
